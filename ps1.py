@@ -7,3 +7,7 @@ for i in range(0, len(data)):
     else:
         print("Please enter a valid binary data")
         break
+if (count % 2 == 0):
+    print("Parity bit data:{0}".format(data + "1"))
+    data2 = data.replace("010", "0100")
+    print("Transmitting data:{0}".format(data2 + "10101"))
